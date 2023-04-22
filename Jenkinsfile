@@ -1,7 +1,6 @@
 pipeline {
     agent any
-    environment {
-    }
+
     stages {
         stage('Pull images from Docker Hub') {
             steps {
