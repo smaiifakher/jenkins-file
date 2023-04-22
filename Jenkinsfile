@@ -17,22 +17,17 @@ pipeline {
     stages {
         stage('Pull images from Docker Hub') {
             steps {
-                script {
-
-                }
+                 sh 'make --version'
             }
         }
         stage('Update the Kubernetes manifests') {
             steps {
-                script {
-                    // Update the Kubernetes manifests with the Docker image tags
-
-                }
+                 sh 'make --version'
             }
         }
         stage('Apply the Kubernetes manifests') {
             steps {
-
+                 sh 'make --version'
             }
         }
     }
